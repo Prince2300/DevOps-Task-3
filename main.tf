@@ -57,7 +57,7 @@ resource "aws_api_gateway_rest_api" "MyDemoAPI" {
 
 
 resource "aws_dynamodb_table" "my-dynamodb-table" {
-  name           = "GameScores_AbsolutelyNoPlagiarism"
+  name           = "Game_of_Ocane"
   billing_mode   = "PROVISIONED"
   read_capacity  = 20
   write_capacity = 20
@@ -95,7 +95,7 @@ resource "aws_dynamodb_table" "my-dynamodb-table" {
   }
 
   tags = {
-    Name        = "dynamodb-table-1"
+    Name        = "game-w-table-1"
     Environment = "production"
   }
 }
